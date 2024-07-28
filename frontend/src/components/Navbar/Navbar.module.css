@@ -1,0 +1,25 @@
+.header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    transition: background 0.2s ease-in-out;
+}
+
+.scrolled {
+    background: rgba(255, 255, 255, 0.938) !important;
+}
+
+.notscrolled {
+    background: transparent !important;
+}
+
+@media (max-width:690px){
+    .mobileheader{
+        background-color: white !important;
+    }
+
+
+}
