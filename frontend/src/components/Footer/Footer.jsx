@@ -72,7 +72,7 @@ const Footer = () => {
                 <div class="mx-6 py-10 text-center md:text-left">
                     <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-                        <div class="">
+                        <div class="flex flex-col items-center justify-center">
                             <img className='w-40 my-6' src={WhiteLogo} alt="RomeWheels" />
                             <p>
                                 Rent a car in style and comfort with Romewheels, your trusted choice for exploring the Eternal City.

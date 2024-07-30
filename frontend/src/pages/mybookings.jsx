@@ -16,28 +16,28 @@ const MyBookings = () => {
             const res = await axiosInstance.delete(`/delete-booking/${id}`)
                 .then(res => toast.success('Booking Cancelled Successfully'))
                 .catch(err => console.log(err))
+                fetchBookings();
         } catch (error) {
             console.log(error)
         }
     }
+    const fetchBookings = async () => {
+        try {
+            const res = await axiosInstance.get('/get-booking')
+            if (res.data && res.data.bookings) {
+                setBookings(res.data.bookings)
+                res.data.bookings.map(booking => {
+                    const endDate = new Date(booking.endDate).toISOString().split('T')[0];
+                    const today = new Date().toISOString().split('T')[0];
+                    if (endDate < today) cancelBookingHandler(booking._id);
+                })
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     useEffect(() => {
-
-        const fetchBookings = async () => {
-            try {
-                const res = await axiosInstance.get('/get-booking')
-                if (res.data && res.data.bookings) {
-                    setBookings(res.data.bookings)
-                    res.data.bookings.map(booking => {
-                        const endDate = new Date(booking.endDate).toISOString().split('T')[0];
-                        const today = new Date().toISOString().split('T')[0];
-                        if (endDate < today) cancelBookingHandler(booking._id);
-                    })
-                }
-            } catch (error) {
-                console.log(error);
-            }
-        }
         fetchBookings();
     }, [])
 

@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Saira Condensed
+- Font Author: Copyright 2016 The Saira Project Authors (omnibus.type@gmail.com), with reserved font name "Saira".
+- Font Source: https://fonts.gstatic.com/s/sairacondensed/v11/EJROQgErUN8XuHNEtX81i9TmEkrfpeFE-IyCrw.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

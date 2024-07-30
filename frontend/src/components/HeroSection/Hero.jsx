@@ -36,8 +36,8 @@ const HeroSection = () => {
             </div>
 
             <div className="absolute bottom-4 left-4 text-lg md:text-base">
-                <p>+01 800 25923857</p>
-                <p>100 Main St, New York NY 10002, USA</p>
+                <p>+ 01 234 567 88</p>
+                <p> Rome , Via del Mascherino, 32</p>
             </div>
 
             <div className="absolute top-50 left-4 space-y-2">

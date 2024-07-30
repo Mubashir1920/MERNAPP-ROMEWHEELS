@@ -150,7 +150,7 @@ const FullCarCard = () => {
               </button>
               {isDescriptionOpen && (
                 <div>
-                  <p className='mb-3'>Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list.</p>
+                  <p className='mb-3'>Below are the car Details. Read the Terms and Conditions before booking the car.</p>
                   <h1 className="text-3xl capitalize font-semibold"> {`${car.make} ${car.model} ${car.year}`}</h1>
                   <div className="flex items-center mt-2">
                     <span className="bg-green-300 capitalize text-black font-semibold  px-3 rounded-full text-md">{car.carType}</span>

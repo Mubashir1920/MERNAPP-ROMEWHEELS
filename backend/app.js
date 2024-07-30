@@ -257,7 +257,7 @@ app.get('/get-car/:carId', async (req, res) => {
 app.get('/get-cars', async (req, res) => {
 
     try {
-        const cars = await Car.find();
+        const cars = await Car.find({status : 'available'});
         res.json({
             error: false,
             cars
