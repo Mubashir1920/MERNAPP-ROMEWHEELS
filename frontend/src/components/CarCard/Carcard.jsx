@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsFillFuelPumpFill } from "react-icons/bs";
 import { GiOrange } from "react-icons/gi";
 import { IoSpeedometer } from "react-icons/io5";
 import { Link } from 'react-router-dom';
