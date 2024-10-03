@@ -6,15 +6,15 @@ const Footer = () => {
     return (
         <div className='bg-gray-900' >
             <footer
-                class="container mx-auto text-2xl  text-center text-surface/75  dark:text-white/75 lg:text-left">
+                className="container mx-auto text-2xl  text-center text-surface/75  dark:text-white/75 lg:text-left">
                 <div
-                    class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
-                    <div class="me-12 hidden lg:block">
+                    className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
+                    <div className="me-12 hidden lg:block">
                         <span>Get connected with us on social networks:</span>
                     </div>
 
-                    <div class="flex justify-center">
-                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                    <div className="flex justify-center">
+                        <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -24,7 +24,7 @@ const Footer = () => {
                                     d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
                             </svg>
                         </a>
-                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
+                        <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -35,7 +35,7 @@ const Footer = () => {
                             </svg>
                         </a>
 
-                        <a href="#!" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                        <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -45,7 +45,7 @@ const Footer = () => {
                                     d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                             </svg>
                         </a>
-                        <a target='_blank' href="https://www.linkedin.com/in/mohammad-mubashir-060923234/" class="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                        <a target='_blank' href="https://www.linkedin.com/in/mohammad-mubashir-060923234/" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -55,7 +55,7 @@ const Footer = () => {
                                     d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                             </svg>
                         </a>
-                        <a target='_blank' href="https://github.com/Mubashir1920" class="[&>svg]:h-4 [&>svg]:w-4">
+                        <a target='_blank' href="https://github.com/Mubashir1920" className="[&>svg]:h-4 [&>svg]:w-4">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -69,10 +69,10 @@ const Footer = () => {
                 </div>
 
 
-                <div class="mx-6 py-10 text-center md:text-left">
-                    <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div className="mx-6 py-10 text-center md:text-left">
+                    <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-                        <div class="flex flex-col items-center justify-center">
+                        <div className="flex flex-col items-center justify-center">
                             <img className='w-40 my-6' src={WhiteLogo} alt="RomeWheels" />
                             <p>
                                 Rent a car in style and comfort with Romewheels, your trusted choice for exploring the Eternal City.
@@ -81,16 +81,16 @@ const Footer = () => {
 
                         <div>
                             <h6
-                                class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                                className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                                 Cars
                             </h6>
-                            <p class="mb-4">
+                            <p className="mb-4">
                                 <a href="#!">Honda</a>
                             </p>
-                            <p class="mb-4">
+                            <p className="mb-4">
                                 <a href="#!">Toyota</a>
                             </p>
-                            <p class="mb-4">
+                            <p className="mb-4">
                                 <a href="#!">Mercedes</a>
                             </p>
                             <p>
@@ -100,16 +100,16 @@ const Footer = () => {
 
                         <div>
                             <h6
-                                class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                                className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                                 Useful links
                             </h6>
-                            <p class="mb-4">
+                            <p className="mb-4">
                                 <Link to='/' >Home</Link>
                             </p>
-                            <p class="mb-4">
+                            <p className="mb-4">
                                 <Link to='/about' >About Us</Link>
                             </p>
-                            <p class="mb-4" >
+                            <p className="mb-4" >
                                 <Link to='/contact' >Contact Us</Link>
                             </p>
                             <p >
@@ -122,11 +122,11 @@ const Footer = () => {
 
                         <div>
                             <h6
-                                class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                                className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                                 Contact
                             </h6>
-                            <p class="mb-4 flex items-center justify-center md:justify-start">
-                                <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <p className="mb-4 flex items-center justify-center md:justify-start">
+                                <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -139,8 +139,8 @@ const Footer = () => {
                                 </span>
                                 Rome , Via del Mascherino, 32
                             </p>
-                            <p class="mb-4 flex items-center justify-center md:justify-start">
-                                <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <p className="mb-4 flex items-center justify-center md:justify-start">
+                                <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -153,8 +153,8 @@ const Footer = () => {
                                 </span>
                                 info@romewheels.com
                             </p>
-                            <p class="mb-4 flex items-center justify-center md:justify-start">
-                                <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <p className="mb-4 flex items-center justify-center md:justify-start">
+                                <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -167,8 +167,8 @@ const Footer = () => {
                                 </span>
                                 + 01 234 567 88
                             </p>
-                            <p class="flex items-center justify-center md:justify-start">
-                                <span class="me-3 [&>svg]:h-5 [&>svg]:w-5">
+                            <p className="flex items-center justify-center md:justify-start">
+                                <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -186,9 +186,9 @@ const Footer = () => {
                 </div>
 
 
-                <div class="bg-black/5 p-6 text-center">
+                <div className="bg-black/5 p-6 text-center">
                     <span>© 2023 Copyright </span>
-                    <a class="font-semibold" href="/"
+                    <a className="font-semibold" href="/"
                     >RomeWheels </a
                     >
                 </div>

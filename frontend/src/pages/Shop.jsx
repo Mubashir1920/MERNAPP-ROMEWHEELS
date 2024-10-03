@@ -4,11 +4,14 @@ import CarCard from '../components/CarCard/Carcard';
 import Footer from '../components/Footer/Footer';
 import axiosInstance from '../Utils/axiosInstance';
 import toast from 'react-hot-toast';
+import Spinner from '../components/Spinner/Spinner';
 
 const Shop = () => {
 
     const [activeTab, setActiveTab] = useState('All');
     const [cars, setCars] = useState([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState('')
     const [filteredCar, setFilteredCar] = useState([]);
     const tabs = ['All', 'sedan', 'suv', 'hatchback'];
 
@@ -55,8 +58,14 @@ const Shop = () => {
                     setCars(response.data.cars)
                     setFilteredCar(response.data.cars)
                 }
+                if(response.status !== 200){
+                    setError('Error Fetching Cars!')
+                }
             } catch (error) {
+                setError('Error Fetching Data!')
                 toast.error(error);
+            } finally {
+                setLoading(false)
             }
         }
 
@@ -83,9 +92,16 @@ const Shop = () => {
                     ))}
                 </div>
                 <div className="container mt-10 flex flex-wrap justify-center lg:justify-left gap-8">
-                    {filteredCar.map(car => (
-                        <CarCard key={car._id} car={car} />
-                    ))}
+                    {loading ?
+                        <div className='mx-auto' >
+                            <Spinner />
+                        </div> :
+
+                        !error && filteredCar.map(car => (
+                            <CarCard key={car._id} car={car} />
+                        ))
+                    }
+                    {error && <p className='text-red-600 text-md font-normal' > {error} </p>}
                 </div>
 
                 <div className="why-choose-us  py-20 px-10">

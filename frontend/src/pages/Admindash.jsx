@@ -92,17 +92,17 @@ const Admindash = () => {
       <div className='container mx-auto flex flex-col items-center sm:flex-row sm:items-center sm:justify-start gap-2'>
         {bookings && (
           <div>
-            <a href="#" class="flex items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <a href="#" className="flex items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
               <GoDotFill className='mb-2 text-xl text-red-600' />
-              <h5 class="mb-2 text-2xl font-bold tracking-wide text-gray-900 dark:text-white">Total Booked: {bookings.length}</h5>
+              <h5 className="mb-2 text-2xl font-bold tracking-wide text-gray-900 dark:text-white">Total Booked: {bookings.length}</h5>
             </a>
           </div>
         )}
         {cars && (
           <div>
-            <a href="#" class="flex items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <a href="#" className="flex items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
               <GoDotFill className='text-xl text-green-600 mb-2' />
-              <h5 class="mb-2 text-2xl font-bold tracking-wide text-gray-900 dark:text-white">Total Cars: {cars.length}</h5>
+              <h5 className="mb-2 text-2xl font-bold tracking-wide text-gray-900 dark:text-white">Total Cars: {cars.length}</h5>
             </a>
           </div>
         )}

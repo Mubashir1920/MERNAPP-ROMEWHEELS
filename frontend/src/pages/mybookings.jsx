@@ -4,17 +4,19 @@ import axiosInstance from '../Utils/axiosInstance';
 import BookingCard from '../components/BookingCard/BookingCard';
 import Footer from '../components/Footer/Footer'
 import { FaNotesMedical } from "react-icons/fa6";
-import toast from 'react-hot-toast'
+import toast from 'react-hot-toast';
+import Spinner from '../components/Spinner/Spinner';
 
 
 const MyBookings = () => {
 
     const [bookings, setBookings] = useState([])
+    const [loading , setLoading] =useState(true)
 
     const cancelBookingHandler = async (id) => {
         try {
             const res = await axiosInstance.delete(`/delete-booking/${id}`)
-                .then(res => toast.success('Booking Cancelled Successfully'))
+                .then(() => toast.success('Booking Cancelled Successfully'))
                 .catch(err => console.log(err))
                 fetchBookings();
         } catch (error) {
