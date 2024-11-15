@@ -55,10 +55,11 @@ const Shop = () => {
             try {
                 const response = await axiosInstance.get('/get-cars')
                 if (response.data && response.data.cars) {
+                    console.log(response);
                     setCars(response.data.cars)
                     setFilteredCar(response.data.cars)
                 }
-                if(response.status !== 200){
+                if (response.status !== 200) {
                     setError('Error Fetching Cars!')
                 }
             } catch (error) {
@@ -101,6 +102,7 @@ const Shop = () => {
                             <CarCard key={car._id} car={car} />
                         ))
                     }
+                    {cars.length == 0 ? <p className='text-red-600 text-md font-normal' > No Cars Available! </p> : ''}
                     {error && <p className='text-red-600 text-md font-normal' > {error} </p>}
                 </div>
 

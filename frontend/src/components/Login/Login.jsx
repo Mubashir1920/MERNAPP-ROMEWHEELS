@@ -26,10 +26,14 @@ const Login = () => {
 
     const LoginHandler = async (e) => {
         e.preventDefault();
+        if (email == "admin@romewheels.com") {
+            toast.error("Admin Login Not Allowed")
+            navigate('/')
+            return;
+        }
         if (!email) {
             setError("Please Enter Email!")
             return;
-
         }
         if (!password) {
             setError("Please Enter Password!")
